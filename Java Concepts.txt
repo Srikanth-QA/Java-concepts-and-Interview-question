@@ -1,0 +1,137 @@
+Day 1 concepts
+
+1. JVM (Java Virtual Machine)
+
+JVM is the engine that runs Java programs.
+
+Key points:
+
+Executes the compiled Java bytecode (`.class` files).
+Provides memory management (Heap, Stack).
+Performs Garbage Collection.
+Platform‑dependent (different JVM for Windows, Linux, macOS), but bytecode is platform‑independent.
+
+Think of JVM as:
+"The machine that actually runs the Java program."
+
+2. JRE (Java Runtime Environment)
+
+JRE provides everything required to *run* Java applications.
+
+Includes:
+JVM
+Core libraries (java.lang, java.util, etc.)
+Other runtime files
+
+Does not include:
+Compiler (`javac`)
+Development tools
+
+Think of JRE as:
+"The environment that allows Java apps to run."
+
+3. JDK (Java Development Kit)
+
+JDK contains everything required to *develop and run* Java applications.
+Includes:
+JRE (which includes JVM)
+Development tools:
+`javac` (compiler)
+`jdb` (debugger)
+`jar` (packaging tool)
+Documentation generator (`javadoc`)
+
+Think of JDK as:
+"The full toolkit for Java developers."
+
+Relationship (Simple Diagram)
+
+JDK  
+→ contains JRE  
+→ which contains JVM
+
+4. Data Types in Java
+
+Java is a strongly typed language — every variable must have a type.
+
+Java has 2 kinds of data types:
+
+A) Primitive Data Types
+These store simple values directly.
+
+There are 8 primitives:
+1.  `byte`
+2.  `short`
+3.  `int`
+4.  `long`
+5.  `float`
+6.  `double`
+7.  `char`
+8.  `boolean`
+
+Example:
+java
+int age = 25;
+double price = 99.99;
+boolean isActive = true;
+char grade = 'A';
+
+B) Non‑Primitive (Reference) Data Types
+
+These store the *address/reference* of an object, not the object itself.
+
+Examples:
+*   String
+*   Arrays
+*   Classes
+*   Interfaces
+*   Objects
+
+Example:
+
+java
+String name = "Srikanth";
+int[] numbers = {1, 2, 3};
+
+5. Variables in Java
+
+A variable is a container that stores data (value) during program execution.
+
+A variable has:
+
+*   Name
+*   Data type
+*   Value
+
+Example:
+
+java
+int salary = 50000;
+
+Types of variables:
+
+1.  Local variables → inside methods
+2.  Instance variables → inside class but outside methods (non‑static)
+3.  Static variables → shared across all objects (using `static` keyword)
+
+Example:
+java
+class Employee {
+    static int companyCode = 101;    // Static variable
+    String name;                     // Instance variable
+
+    void display() {
+        int age = 25;                // Local variable
+    }
+}
+
+Quick Summary
+
+JVM → Runs Java bytecode  
+JRE → JVM + libraries (to run Java)  
+JDK → JRE + tools (to develop Java)
+
+Data Types → Primitive & Non‑Primitive  
+Variables → Containers that store values
+
+
