@@ -1,0 +1,43 @@
+1️⃣ What is Java?
+
+Java is a high‑level, object‑oriented, secure, and robust programming language developed by Sun Microsystems (now Oracle). 
+It follows the principle “Write Once, Run Anywhere (WORA)” , meaning the same Java program can run on different operating systems without modification.
+
+Key points you can mention in an interview:
+
+  It is object‑oriented (uses classes and objects).
+  It is platform‑independent at the source and bytecode level.
+  It is secure (no pointers, runs inside JVM sandbox).
+  It is robust (automatic garbage collection, strong memory management).
+  It is multithreaded (supports parallel execution).
+  It is portable (code runs across platforms).
+
+Sample one‑line answer: 
+“Java is a high‑level, object‑oriented and platform‑independent programming language used to build secure, portable and scalable applications.”
+
+ 
+
+2️⃣ Why is Java Platform Independent? 
+
+Java is platform‑independent because Java programs are compiled into bytecode , not machine‑specific code.
+
+Here’s the flow:
+
+1. The Java compiler (`javac`) converts source code (`.java`) into bytecode (`.class`).
+2. Bytecode is the same across all operating systems. 
+3. Each OS has its own JVM implementation.
+4. The JVM interprets/executes the bytecode on that specific platform.
+
+So: 
+ Same bytecode → Different JVMs → Runs anywhere 
+
+That’s the reason behind Java’s slogan: 
+ “Write Once, Run Anywhere.” 
+
+ 
+
+  Short Answer 
+Q: Why is Java platform independent?  
+Java is platform independent because its compiler generates platform‑neutral bytecode, and this bytecode is executed by the JVM, which is available for all major operating systems.
+
+
